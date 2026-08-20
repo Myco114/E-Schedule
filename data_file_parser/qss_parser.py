@@ -1,7 +1,7 @@
 import pathlib
-from data_file_parser.parser import Parser
+from data_file_parser.base_parser import BaseParser
 
-class QSSParser(Parser):
+class QSSParser(BaseParser):
     def __init__(self, data: dict, path: str):
         super().__init__(data=data)
         self.path = pathlib.Path(path)

@@ -1,6 +1,6 @@
 '''解析器父类'''
 
-class Parser:
+class BaseParser:
     def __init__(self, data: dict):
         self.data = data
 

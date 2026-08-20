@@ -2,7 +2,7 @@ import json
 import pathlib
 from copy import deepcopy
 from model.model import EventSpec, Event, Timetable, Schedule, ScheduleSelector, ScheduleRotator
-from data_file_parser.parser import Parser
+from data_file_parser.base_parser import BaseParser
 from PyQt6.QtCore import QTime, QDate
 from collections import ChainMap
 
@@ -132,7 +132,7 @@ class ScheduleDataParser:
             self._parsed_event_spec[event_spec_key] = event_spec
         return event_spec
 
-class JsonFileParser(Parser):
+class JsonFileParser(BaseParser):
     DEFAULT_DATA = {
         'Schedule Data': {
             'event spec': [],
