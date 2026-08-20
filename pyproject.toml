@@ -1,0 +1,6 @@
+[project]
+name = "e-schedule"
+version = "2.4"
+dependencies = [
+    "pyqt6>=6.11.0",
+]

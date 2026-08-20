@@ -1,0 +1,28 @@
+ScheduleBar {
+    background-color: rgba(0, 0, 0, 150);
+    border-radius: 15px;
+}
+QWidget#EventBar_name {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+QWidget#EventBar_event {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+QWidget#EventBar_event[state=to_do] {
+    color: white;
+}
+QWidget#EventBar_event[state=doing] {
+    color: rgb(255, 239, 15);
+}
+QWidget#EventBar_event[state=done] {
+    color: rgb(156, 156, 156);
+}
+Clock {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
